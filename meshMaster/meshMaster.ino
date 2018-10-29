@@ -1,4 +1,4 @@
- 
+
  
  /** RF24Mesh_Example_Master.ino by TMRh20
   * 
@@ -18,10 +18,10 @@
 #include "RF24Mesh.h"
 #include <SPI.h>
 //Include eeprom.h for AVR (Uno, Nano) etc. except ATTiny
-//#include <EEPROM.h>
+#include <EEPROM.h>
 
 /***** Configure the chosen CE,CS pins *****/
-RF24 radio(9, 10);
+RF24 radio(10,9);
 RF24Network network(radio);
 RF24Mesh mesh(radio,network);
 

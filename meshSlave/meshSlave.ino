@@ -72,7 +72,7 @@ void loop() {
   if (millis() - displayTimer >= 1000) {
     displayTimer = millis();
       String message = "bloo kat";
-      if(mesh.write(message,'S',sizeof(message)) ) Serial.println(message);
+      if(mesh.write(&message,'S',sizeof(message)) ) Serial.println(message);
 //     if(!mesh.write(&message,'M',sizeof(message))){
 //            if( ! mesh.checkConnection() ){
 //              Serial.println("Renewing Address");
